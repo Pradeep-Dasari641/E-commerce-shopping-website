@@ -1,0 +1,133 @@
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Ensures the page height is fully occupied */
+  }
+  
+  .page-background {
+    background-image: url("https://static.vecteezy.com/system/resources/previews/010/803/399/original/background-with-colorful-shopping-bags-illustration-sale-and-discount-concept-vector.jpg");
+    background-size: cover; /* Ensures the image covers the entire screen */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents image from repeating */
+    height: 100vh; /* Makes the background fill the entire viewport height */
+    width: 100%; /* Ensures the background fills the full width */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* To properly position the form over it */
+  }
+  
+  .form-container {
+    background-color: rgba(255, 255, 255, 0.8); /* Optional: Semi-transparent background */
+    padding: 30px;
+    border-radius: 10px;
+    width: 400px; /* Adjust the width of the form */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow for the form */
+  }
+  
+  
+  
+  .shop-here {
+    font-size: 3rem; /* Large font size */
+    font-weight: bold; /* Make the text bold */
+    color: #ffffff; /* White text color */
+    background: linear-gradient(90deg, #ff6f61, #de4e6c); /* Gradient background */
+    padding: 20px 40px; /* Padding around the text */
+    text-align: center; /* Center the text */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    text-transform: uppercase; /* Uppercase letters */
+    width: 100%;
+  }
+  
+  #LRForm{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700; /* Bold weight */
+    font-size: 40px; 
+    text-align: center;
+    color: orange
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+  }
+  
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="password"]:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  .error {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+  }
+  
+  
+  .toggle-button {
+    margin-top: 15px;
+    background: none;
+    border: none;
+    color: #007bff;
+    cursor: pointer;
+    font-size: 14px;
+    text-decoration: underline;
+    text-align: center;
+  }
+    
+  .show-password {
+    display: flex;
+    align-items: center;
+  }
+  
+  
+  
+  
+  .shop-now{
+  width: 100%;
+  height: 500px;
+  margin-top: 80px;
+  border-radius: 10px;
+  margin-left: 80px;
+  
+  }
+  
+  
+  
+  
+  
+  
+  

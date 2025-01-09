@@ -1,0 +1,269 @@
+
+  
+  
+  /* Existing styles... */
+  
+  .image-with-options {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .options-bar {
+    display: none; /* Hide by default */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 300px; /* Adjust as needed */
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 10; /* Ensure it appears above other elements */
+  }
+  
+  .image-with-options:hover .options-bar {
+    display: block; /* Show on hover */
+  }
+  
+  
+  .options-bar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .options-bar li {
+    margin: 5px 0;
+  }
+  
+  .options-bar a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    transition: color 0.3s ease;
+  }
+  
+  .options-bar a:hover {
+    color: #007bff;
+  }
+
+
+  /* MensPage */
+
+  /* MensShirts.css */
+/* MensShirts.css */
+
+.shirts-container {
+  padding: 20px;
+}
+.heads{
+  margin-top: 20px;
+}
+
+.shirts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 20px;
+}
+
+.shirt-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+}
+
+.shirt-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.shirt-card h3 {
+  margin: 10px 0 5px;
+}
+
+.shirt-card p {
+  color: #555;
+}
+
+/* Shimmer Effect */
+
+.shimmer {
+  background: #f6f7f8;
+  position: relative;
+  overflow: hidden;
+}
+
+.shimmer::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -150%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.5) 50%, rgba(255,255,255,0) 100%);
+  animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+  0% {
+      left: -150%;
+  }
+  50% {
+      left: 100%;
+  }
+  100% {
+      left: 150%;
+  }
+}
+
+.shimmer-image {
+  width: 100%;
+  height: 150px;
+  background-color: #ddd;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.shimmer-title,
+.shimmer-price {
+  height: 20px;
+  background-color: #ddd;
+  margin: 5px 0;
+  border-radius: 4px;
+}
+
+/* ShirtDetails.css */
+
+
+.image-details {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  margin-top: 50px;
+  margin-left: 80px;
+}
+
+.Price{
+  font-size: 35px;
+}
+.discount{
+  color: green;
+  margin-left: 10px;
+  font-size: 20px;
+}
+.rating{
+  background-color: rgb(118, 238, 118);
+  height: 30px;
+  width: 80px;
+  border-radius: 10px;
+  font-size: 20px;
+  border: none;
+  color: whitesmoke;
+}
+
+.tag{
+  font-size: 25px ;
+  color: green
+}
+.name{
+  font-size: 21px;
+}
+
+
+/* ShirtImage */
+.wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 20px;
+  height: 100vh; /* Ensure the wrapper takes full viewport height */
+}
+
+.small-images {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  justify-content: center; /* Center the small images vertically */
+  align-items: center; /* Center the small images horizontally */
+}
+
+.small-image {
+  width: 60%;
+  cursor: pointer;
+}
+
+.big-image-column {
+  text-align: center;
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center the big image and buttons vertically */
+  align-items: center; /* Center the big image and buttons horizontally */
+}
+
+.big-image {
+  max-width: 80%;
+  height: 500px;
+  margin-bottom: 20px;
+  margin-left: 150px;
+  justify-content: center;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.addBuy {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+/* buyAndCartButtons */
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; /* Adds space between the buttons */
+  margin-top: 20px; /* Adds space above the button container */
+  position: fixed;
+  width: 30%;
+  margin-left: 60px;
+  margin-top: 80px;
+}
+
+.addBuy {
+  flex: 1; /* Makes the buttons equal width */
+  padding: 12px 20px; /* Increases the padding for a more prominent look */
+  font-size: 16px; /* Sets a larger font size */
+  color: white; /* White text color */
+  background-color: orange; /* Blue background color */
+  border: none; /* Removes the border */
+  border-radius: 5px; /* Adds rounded corners */
+  cursor: pointer; /* Changes the cursor to pointer on hover */
+  transition: background-color 0.3s ease; /* Adds a smooth transition on hover */
+  margin-top: 450px;
+}
+
+.addBuy:hover {
+  background-color: green; /* Darker blue on hover */
+}
+
+.addBuy:focus {
+  outline: none; /* Removes the outline on focus */
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5); /* Adds a focus shadow */
+}
+
+
+
+

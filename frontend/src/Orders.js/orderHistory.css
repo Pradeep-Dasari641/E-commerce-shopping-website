@@ -1,0 +1,103 @@
+.order-history-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+
+  
+  h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+
+  }
+  
+  .order-history-item {
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px 0;
+    transition: box-shadow 0.2s;
+  }
+
+  .no-products {
+    width: 400px; /* Adjust as needed */
+    height: 300px;
+    display: block;
+    margin: 50px auto;
+    margin-top: 150px;
+    mix-blend-mode: color-burn;
+  }
+  
+  .order-history-item:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .order-history-item p {
+    margin: 5px 0;
+    color: #555;
+  }
+  
+  .order-history-item strong {
+    color: #333;
+  }
+  
+  .order-history-item ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .order-history-item li {
+    padding: 5px 0;
+  }
+  
+  .order-history-item li:last-child {
+    border-bottom: none;
+  }
+  
+  @media (max-width: 600px) {
+    .order-history-container {
+      padding: 10px;
+    }
+  
+    h3 {
+      font-size: 1.5em;
+    }
+  }
+  
+  .product-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+  }
+  
+  .pro-detail{
+    color: #333;
+  }
+  .product-item:last-child {
+    border-bottom: none;
+  }
+  
+  .product-image {
+    width: 50px; /* Adjust the size as needed */
+    height: 50px; /* Adjust the size as needed */
+    margin-right: 10px;
+    border-radius: 4px; /* Optional: rounded corners */
+  }
+  
+  .delete-icon {
+    cursor: pointer;
+    color: #ff4d4d; /* Red color for the delete icon */
+    margin-left: 10px;
+  }
+  
+  .delete-icon:hover {
+    color: #cc0000; /* Darker red on hover */
+  }
+  

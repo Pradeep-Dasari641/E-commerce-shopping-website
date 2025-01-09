@@ -1,0 +1,100 @@
+.cart-container {
+    padding: 20px;
+}
+
+.empty-cart{
+    margin-top: 50px;
+    justify-content: center;
+    display: flex;
+    margin-left: 500px;
+    height: 300px;
+    width: 400px;
+    
+}
+
+.empty{
+    margin-top: 50px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.cart-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.cart-item-image {
+    width: 250px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.cart-item-details {
+    flex: 1;
+}
+
+.quantity{
+    margin-top: 10px;
+}
+.Bold{
+    font-size: x-large;
+    color: green;
+}
+
+.answer{
+    font-size: large;
+    margin-left: 10px;
+}
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    width: 80px;
+}
+
+.quantity-controls button {
+    border: none;
+    padding: 5px 10px;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+
+
+
+.delete-button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 80px;
+}
+
+.buy-now{
+    background-color: orange;
+    color: black;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 80px;
+    margin-left: 10px;
+}
+
+.total-price {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.answer{
+    color: black;
+}

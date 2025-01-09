@@ -1,0 +1,206 @@
+
+
+/* options-container */
+.container {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start; /* Align items to the top */
+    flex-wrap: wrap;
+    gap: 20px;
+    z-index: 1;
+  }
+  
+  .image-with-options {
+    text-align: center; /* Center align text below images */
+    transition: transform 0.3s; /* Smooth scale effect on hover */
+    
+  }
+  
+  .image-with-options:hover {
+    transform: scale(1.05); /* Scale up on hover */
+  }
+  
+  .image-container {
+    width: 120px; /* Increased width for better visibility */
+    height: 120px; /* Increased height for better visibility */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px; /* Slightly larger border radius */
+    border: 1px solid #ccc; /* Light border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin-top: 10px;
+    transition: box-shadow 0.3s; /* Smooth shadow effect on hover */
+    z-index: 1;
+  }
+  
+  .image-container:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+  }
+  
+  .image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure images cover the container without distortion */
+    transition: transform 0.3s; /* Smooth zoom effect on hover */
+  
+  }
+  
+  .image-container:hover .image {
+    transform: scale(1.1); /* Zoom in on image hover */
+  }
+  
+  .heading {
+    display: block;
+    margin-top: 10px;
+    font-size: 18px; /* Slightly larger font size */
+    font-weight: bold;
+    color: #333; /* Darker color for better readability */
+    transition: color 0.3s; /* Smooth color transition on hover */
+  }
+  
+  .image-with-options:hover .heading {
+    color: green /* Change color on hover */
+  }
+  
+  
+  /* Ads */
+  .ad {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    overflow: hidden; /* Ensures the images stay within the container */
+  }
+  
+  .ad-images {
+    display: flex;
+    gap: 15px; /* Space between images */
+    animation: fadeIn 1s ease-in-out; /* Fade-in animation */
+  }
+  
+  .ad-image {
+    width: 400px; /* Adjust based on your design */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+  }
+  
+  .ad-image:hover {
+    transform: scale(1.05); /* Slightly zoom on hover */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  
+  
+  
+  /* Mens wear card */
+  .body-container{
+  border: 1px solid black;
+  height: 250px;
+  margin-bottom: 20px;
+  }
+  
+  .outer-container {
+  padding: 20px;
+  }
+  
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Creates 5 equal-width columns */
+    gap: 16px; /* Space between cards */
+    display: flex;
+    justify-content: center;
+  }
+  
+  .items {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Create 5 columns in each row */
+    gap: 16px; /* Space between cards */
+  }
+  
+  .card {
+  border: 2px solid transparent; /* Initial transparent border */
+  border-radius: 8px; /* Rounded corners */
+  overflow: hidden;
+  transition: border-color 0.3s ease, transform 0.3s ease; /* Smooth transition for border and transform */
+  cursor: pointer;
+  width: 200px; /* Adjust width as needed */
+  }
+  
+  .card:hover {
+  border-color: #3498db; /* Change border color on hover */
+  transform: scale(1.05); /* Slightly scale up on hover */
+  }
+  
+  .card-image {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  }
+  
+  .card-content {
+  padding: 10px; /* Padding for content */
+  }
+  
+  .card-title {
+  font-size: 16px;
+  margin: 10px 0;
+  font-weight: bold;
+  }
+  
+  
+  .item-price{
+    color: green;
+    font-size: larger;
+  }
+  
+  .card-section-heading {
+  /* text-align: center; */
+  font-size: 24px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #333;
+  font-weight: bold;
+  
+  
+  }
+  
+  /* ShirtDetails.css */
+  
+  .shirt-details-container {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  }
+  
+  .shirt-details-container img {
+  width: 100%;
+  height: auto;
+  max-width: 400px;
+  margin-bottom: 20px;
+  }
+  
+  .shirt-details-container h2 {
+  margin-bottom: 10px;
+  font-size: 24px;
+  }
+  
+  .shirt-details-container p {
+  margin-bottom: 10px;
+  font-size: 18px;
+  }
+  
+  
+  
